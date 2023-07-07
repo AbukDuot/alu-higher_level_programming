@@ -1,5 +1,0 @@
-#!/bin/bash
-# Get the python code from the Environment Variable
-python_code="$PYCODE"
-# Execute the pyhon code
-python -c "$python_code
