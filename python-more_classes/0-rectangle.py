@@ -2,7 +2,7 @@
 """
 Module 0-rectangle
 
-Contains empty class Rectangle 
+Contains empty class Rectangle
 """
 
 
