@@ -1,14 +1,9 @@
 #!/usr/bin/python3
-"""
-Module 2-my_list
-Contains a class MyList that inherits from list
-Methods:
-    print_sorted(self): Prints the list, but sorted (ascending sort)
-"""
+class MyInt(int):
+    def __eq__(self, other):
+        """Override the equality operator (==)"""
+        return super().__ne__(other)
 
-
-class MyList(list):
-    """inherits from list"""
-    def print_sorted(self):
-        """Prints the list, but sorted (ascending sort)"""
-        print(sorted(self))
+    def __ne__(self, other):
+        """Override the not equal operator (!=)"""
+        return super().__eq__(other)
