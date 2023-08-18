@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Base test cases"""
+""" test_base.py """
 
 import os
 import unittest
@@ -10,7 +10,7 @@ from models.square import Square
 
 
 class TestBase(unittest.TestCase):
-    """Base test class"""
+    """Test class for Base"""
 
     def test_basic(self):
         """Doc"""
@@ -59,7 +59,7 @@ class TestBase(unittest.TestCase):
 
         Rectangle.save_to_file(None)
         self.assertTrue(os.path.isfile("Rectangle.json"))
-        
+
         with open("Rectangle.json") as file:
             self.assertEqual(file.read(), '[]')
 
